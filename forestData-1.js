@@ -28,7 +28,7 @@ let parks = [
 
 // Task 1: Using array and object manipulation, change the name of "Riverside Park" to "Riverside Greenspace" for the relevant tree in the Parks Array.
 // Your code here
-for(let parks of parks){
+for(let park of parks){
     if(park.name=== "Riverside Park"){
         park.name= "Riverside Greenspace";
         break;
