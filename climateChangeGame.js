@@ -15,6 +15,9 @@ function decisionScenario(question, options, correctAnswerIndex) {
 
     let playerAnswer = parseInt(prompt("Enter your choice (number):")) - 1;
 
+    if (isNaN(playerAnswer) || playerAnswer < 0 || playerAnswer >= options.length) {
+        console.log("Invalid choice. Please enter a number corresponding to one of the options.");
+    //I improved the code by putting this validating input. If the player put an incorrect input like 5 instead of 1,2 or 3.
     if (playerAnswer == correctAnswerIndex) {
         console.log('Correct! You made an environment-friendly decision. +1 point.');
         score++;
